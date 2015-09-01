@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F2331C4-0940-42AC-8BC8-BBA60D7F0B8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LLGL2012</RootNamespace>
+    <AssemblyName>LLGL2012</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/LLGL2012/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="LYFunctionCs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="PowerCheckCs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ss_getcitycode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommFunction.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColdChain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColdChain.Designer.cs">
+      <DependentUpon>FrmColdChain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColdChainNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColdChainNew.Designer.cs">
+      <DependentUpon>FrmColdChainNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColdCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColdCheck.Designer.cs">
+      <DependentUpon>FrmColdCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColdQurey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColdQurey.Designer.cs">
+      <DependentUpon>FrmColdQurey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColdVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColdVendor.Designer.cs">
+      <DependentUpon>FrmColdVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommCode.Designer.cs">
+      <DependentUpon>FrmCommCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditCode.Designer.cs">
+      <DependentUpon>FrmEditCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditIce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditIce.Designer.cs">
+      <DependentUpon>FrmEditIce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditIceLocn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditIceLocn.Designer.cs">
+      <DependentUpon>FrmEditIceLocn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditIceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditIceMaster.Designer.cs">
+      <DependentUpon>FrmEditIceMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditItem.Designer.cs">
+      <DependentUpon>FrmEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditTherm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditTherm.Designer.cs">
+      <DependentUpon>FrmEditTherm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditVendor.Designer.cs">
+      <DependentUpon>FrmEditVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGZ.Designer.cs">
+      <DependentUpon>FrmGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIceLocn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIceLocn.Designer.cs">
+      <DependentUpon>FrmIceLocn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIceMaster.Designer.cs">
+      <DependentUpon>FrmIceMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIceOperate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIceOperate.Designer.cs">
+      <DependentUpon>FrmIceOperate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIceQurey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIceQurey.Designer.cs">
+      <DependentUpon>FrmIceQurey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemMaster.Designer.cs">
+      <DependentUpon>FrmItemMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemTrack.Designer.cs">
+      <DependentUpon>FrmItemTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLOG.designer.cs">
+      <DependentUpon>frmLOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack.Designer.cs">
+      <DependentUpon>FrmPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRGBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRGBack.Designer.cs">
+      <DependentUpon>FrmRGBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRGNotRe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRGNotRe.Designer.cs">
+      <DependentUpon>FrmRGNotRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchCcPkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchCcPkt.Designer.cs">
+      <DependentUpon>FrmSearchCcPkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowDay.Designer.cs">
+      <DependentUpon>FrmShowDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColdChain.resx">
+      <DependentUpon>FrmColdChain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColdChainNew.resx">
+      <DependentUpon>FrmColdChainNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColdCheck.resx">
+      <DependentUpon>FrmColdCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColdQurey.resx">
+      <DependentUpon>FrmColdQurey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColdVendor.resx">
+      <DependentUpon>FrmColdVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommCode.resx">
+      <DependentUpon>FrmCommCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditCode.resx">
+      <DependentUpon>FrmEditCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditIce.resx">
+      <DependentUpon>FrmEditIce.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditIceLocn.resx">
+      <DependentUpon>FrmEditIceLocn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditIceMaster.resx">
+      <DependentUpon>FrmEditIceMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditItem.resx">
+      <DependentUpon>FrmEditItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditTherm.resx">
+      <DependentUpon>FrmEditTherm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditVendor.resx">
+      <DependentUpon>FrmEditVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGZ.resx">
+      <DependentUpon>FrmGZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIceLocn.resx">
+      <DependentUpon>FrmIceLocn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIceMaster.resx">
+      <DependentUpon>FrmIceMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIceOperate.resx">
+      <DependentUpon>FrmIceOperate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIceQurey.resx">
+      <DependentUpon>FrmIceQurey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemMaster.resx">
+      <DependentUpon>FrmItemMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemTrack.resx">
+      <DependentUpon>FrmItemTrack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLOG.resx">
+      <DependentUpon>frmLOG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack.resx">
+      <DependentUpon>FrmPack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRGBack.resx">
+      <DependentUpon>FrmRGBack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRGNotRe.resx">
+      <DependentUpon>FrmRGNotRe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchCcPkt.resx">
+      <DependentUpon>FrmSearchCcPkt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowDay.resx">
+      <DependentUpon>FrmShowDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="weatherget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
